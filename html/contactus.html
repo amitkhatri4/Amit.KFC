@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/75e53ee709.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/contact-us.css">
+    <title>Divyani international</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <div class="menu-icons">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>
+          <a href="index.html" class="logo1">
+            <img src="../img/RJ Crop.gif" alt="">
+          </a>
+          <a href="index.html" class="logo">
+            <img src="../img/Devyani Logo Original.jpg" alt="">
+          </a>
+          <ul class="nav_list">
+            <li><a href="index.html" class="btn">Home</a></li>
+            <li class="drop_down">
+              <a href="aboutus.html">About Us</a>
+
+              <ul class="sub-menu sub-1">
+                <li><a href="#">Intro To Organization</a></li>
+                <li>
+                  <a href="#">Our Promoters </a>
+                 
+                </li>
+             
+                <li><a href="#">Mission/Vision/Objectives</a></li>
+                <li><a href="branches.html">Our Branches</a> </li>
+                <li><a href="team.html">Our Team</a> </li>
+              </ul>
+            </li>
+
+            <li><a href="csr.html" class="btn">CSR</a></li>
+            <li class="drop_down2">
+                <a href="product.html"
+                  >Our Products
+                </a>
+  
+                <ul class="sub-menu sub-1">
+                 <li><a href="#">KFC</a></li>
+                  <li><a href="#">PIZZA-HUT</a> </li>
+                  <li><a href="#">CREAM-BELL</a> </li>
+                </ul>
+              </li>
+           
+            <li><a href="contactus.html" class="btn">contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- js for Nav -->
+    <script>const menu = document.querySelector(".menu-icons");
+        const nav = document.querySelector(".nav");
+        
+        menu.addEventListener("click", () => {
+          nav.classList.toggle("active");
+        });
+        </script>
+
+
+<section class="body">
+<!-- office info start -->
+  <section class="office-info">
+<h1>Divyani international pvt limited</h1>
+<!-- <img src="../img/Devyani Logo Original.jpg" alt="divyani"> -->
+<h2>Durbarmarg,kathmandu</h2>
+<marquee behavior="scroll" direction="left" scrollamount="10">Devyani International Limited (An associate company of RJ Corp – largest bottler of Pepsico - with interests in Beverages/ Food/ Dairy/ Healthcare/ Real Estate/ Education) is the fastest growing, customer centric, profitable player in the Indian retail F&B sector, with presence in different space zones cutting across Indian subcontinent, Nepal and Nigeria with 500+ restaurants.</marquee>
+
+<div class="mapouter">
+  <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=675&amp;height=225&amp;hl=en&amp;q=kfc durbarmarg&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.fridaynightfunkin.net/friday-night-funkin-mods-fnf-play-online/">Friday Night Funkin Mods</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:300px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:225px;}.gmap_iframe {height:225px!important;}</style></div>
+
+  </section>
+  <!-- office info end -->
+<section class="cnadf">
+    <div class="footer"> 
+    
+      <div class="left">
+        <div class="content-left">
+          <h3 class="footing">About Us</h3>
+          <ul><a href="team.html">Our Teams</a></ul>
+          <ul><a href="branches.html">Branches</a></ul>
+        
+        </div>
+  
+      </div>
+      <div class="middle">
+      <h3 class="footing">Brands</h3>
+      <ul><a href="https://www.kfc.com.np/menu/">KFC</a></ul>
+      <ul><a href="#pizzahut">Pizza-Hut</a></ul>
+      <ul><a href="#cream-bell">Cream-Bell</a></ul>
+      </div>
+      <div class="right">
+      <h3 class="footing"> <a href="contactus.html">Contact Us</a> 
+        <br>
+       <a href="mailto:career.nepal@dil-rjcorp.com">
+         career.nepal@dil-rjcorp.com</a> 
+         <div class="contact-us">
+          <button class="open-button" onclick="openForm()">Leave a message here</button>
+          <div class="form-popup" id="myForm">
+            <form action="/connect.php" class="form-container">
+              <label for="fname"><b>First Name</b></label>
+              <input type="text" placeholder="Enter FirstName" name="fname" required>
+              
+               <label for="lname"><b>Last Name</b></label>
+              <input type="text" placeholder="Enter LastName" name="lname" required>   
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+           <label for="pnumber"><b>Phone Number</b></label>
+              <input type="number" placeholder="Enter Number" name="pnumber" required>
+          
+          <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
+          
+          
+             <button type="submit" class="btn">Submit</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+          <!-- script for leave a message -->
+          <script>
+          function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+          
+          function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+          </script>
+          <!-- end -->
+         </div>
+      </h3> 
+    </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Form section start -->
+
+<!-- form section end -->
+
+
+
+</section>

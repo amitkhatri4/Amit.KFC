@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/75e53ee709.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Divyani international</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <div class="menu-icons">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>
+          <a href="index.html" class="logo1">
+            <img src="../img/RJ Crop.gif" alt="">
+          </a>
+          <a href="index.html" class="logo">
+            <img src="../img/Devyani Logo Original.jpg" alt="">
+          </a>
+          <ul class="nav_list">
+            <li><a href="#" class="btn">Home</a></li>
+            <li class="drop_down">
+              <a href="aboutus.html">About Us</a>
+
+              <ul class="sub-menu sub-1">
+                <li><a href="intro.html">Intro To Organization</a></li>
+                <li>
+                  <a href="#">Our Promoters </a>
+                 
+                </li>
+             
+                <li><a href="#">Mission/Vision/Objectives</a></li>
+                <li><a href="branches.html">Our Branches</a> </li>
+                <li><a href="team.html">Our Team</a> </li>
+              </ul>
+            </li>
+
+            <li><a href="csr.html" class="btn">CSR</a></li>
+            <li class="drop_down2">
+                <a href="product.html"
+                  >Our Products
+                </a>
+  
+                <ul class="sub-menu sub-1">
+                 <li><a href="#">KFC</a></li>
+                  <li><a href="#">PIZZA-HUT</a> </li>
+                  <li><a href="#">CREAM-BELL</a> </li>
+                </ul>
+              </li>
+            <li><a href="contactus.html" class="btn">contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+ <script src="../js/nav.js"></script>
+
+        <!-- main content -->
+<section class="main">
+<section class="brand">
+  <div class="row-logo">
+    <div class="column-logo"> 
+      <img src="../img/KFC Logo Final.jpg" alt="">
+    </div>
+    <div class="column-logo">
+     <img src="../img/Pizza Hut Logo Final.jpg" alt="">
+    </div>
+    <div class="column-logo1"> 
+      <img src="../img/Cream Bell Final.png" alt="">
+    </div>
+</div>
+</section>
+<!-- news section -->
+<section class="news">
+<h1>NEWS & UPDATE</h1>
+<div class="news-container">
+  <ul>
+ 
+    <li>
+      <div class="time">
+        <h2>12 <br> <span class="color">FEB</span></h2>
+      </div>
+      <div class="details">
+        <h3>Who's Birthday it is?</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur consequuntur voluptas commodi magnam sint veritatis expedita sed nemo error nobis, quis exercitationem quae. Quidem, dolorum asperiores! Ut, nesciunt doloribus.</p>
+        <a href="#">See More</a>
+      </div>
+    </li>
+    <li>
+      <div class="time">
+        <h2>12 <br> <span class="color">FEB</span></h2>
+      </div>
+      <div class="details">
+        <h3>Who's Birthday it is?</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur consequuntur voluptas commodi magnam sint veritatis expedita sed nemo error nobis, quis exercitationem quae. Quidem, dolorum asperiores! Ut, nesciunt doloribus.</p>
+        <a href="#">See More</a>
+      </div>
+    </li>
+  
+    <li>
+      <div class="time">
+        <h2>12 <br> <span class="color">FEB</span></h2>
+      </div>
+      <div class="details">
+        <h3>Who's Birthday it is?</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis tenetur consequuntur voluptas commodi magnam sint veritatis expedita sed nemo error nobis, quis exercitationem quae. Quidem, dolorum asperiores! Ut, nesciunt doloribus.</p>
+        <a href="#">See More</a>
+      </div>
+    </li>
+  </ul>
+</div>
+
+</section>
+<!-- news section end -->
+<section class="slider">
+
+  <div class="left-slide"> 
+
+    <div class="mySlides fade ">
+     
+      <img src="../img/slider/kfc.png" style="width:100%">
+     
+    </div>
+    
+    <div class="mySlides fade">
+    
+      <img src="../img/slider/pizzahut.png" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="../img/slider/coffee.png" style="width:100%">
+      <br>
+     </div>
+    </div>
+   
+      
+      
+   
+     <!-- js for sliding  -->
+       <script>
+       var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+ var i;
+ var slides = document.getElementsByClassName("mySlides");
+ for (i = 0; i < slides.length; i++) {
+   slides[i].style.display = "none";
+ }
+ slideIndex++;
+ if (slideIndex > slides.length) {slideIndex = 1}
+ slides[slideIndex-1].style.display = "block";
+ setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</section>
+
+
+<section class="social">
+<div class="about">
+  <div class="image">
+    <img src="../img/about.png" alt="">
+  </div>
+  <div class="content">
+    <h1>About US</h1>
+    <p>We are the largest franchisee of Yum Brands in India and are among the largest operators of chain quick service restaurants in India... </p>
+    <h2><a href="aboutus.html">See More</a></h2>
+  </div>
+</div>
+</section>
+<section class="csr">
+  <div class="wraper">
+    <div class="content-csr">
+     
+        <p>
+            Our 
+            <span>
+              Corporate Social 
+            </span>
+            &mdash;Responsibility &mdash;
+            <br>
+            <a href="">See more</a>
+            
+          </p>
+        
+    </div>
+    
+    <div class="bar-image">
+    <img src="../img/krakenimages-Y5bvRlcCx8k-unsplash.jpg" alt="">
+    </div>
+  
+    </div>
+</section>
+
+
+
+<section class="product">
+  <div class="pro-1">
+    <div class="image-pro">
+      <img src="../img/maxime-lebrun-HqYWQo7l49w-unsplash.jpg" alt="">
+    </div>
+    <div class="content-pros">
+      <h1>Our Products</h1>
+      <p> KFC Nepal story starts with the opening of the first restaurant in Kathmandu in 2008.....</p>
+      <h2><a href="product.html">See More</a></h2>
+    </div>
+  </div>
+</section>
+ 
+ 
+
+
+<!--Footer start--> 
+ <section>
+  <div class="footer"> 
+  
+    <div class="left">
+
+      <div class="content-left">
+        <h3 class="footing">About Us</h3>
+        <ul><a href="team.html">Our Teams</a></ul>
+        <ul><a href="branches.html">Branches</a></ul>
+      
+      </div>
+
+    </div>
+    <div class="middle">
+    <h3 class="footing">Brands</h3>
+    <ul><a href="https://www.kfc.com.np/menu/">KFC</a></ul>
+    <ul><a href="#pizzahut">Pizza-Hut</a></ul>
+    <ul><a href="#cream-bell">Cream-Bell</a></ul>
+    </div>
+    <div class="right">
+    <h3 class="footing"> <a href="contactus.html">Contact Us</a> 
+      <br>
+      <a href="mailto:Amitkhatri">Amitkhatri@gmail.com</a> 
+    </h3> 
+  </div>
+  </div>
+</section>
+<!-- footer end -->
+
+
+</section> 
+<!-- end main content -->
+
+ 
+
+
+
+</body>
+</html>

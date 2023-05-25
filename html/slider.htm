@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/slider.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: -30%;
+  top: -5%;
+  text-align: center;
+  align-items: center;
+  width: 90%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(255, 255, 255); /* Fallback color */
+  background-color: rgba(255, 247, 247, 0.4); /* Black w/ opacity */
+}
+#myBtn img{
+  border-radius: 50%;
+  background: none;
+  border: none;
+  margin-left: 10vh;
+}
+
+/* Modal Content  abouit htem*/
+.modal-content {
+top: 50%;
+  background-color: #fff2f2;
+  margin: auto;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+  height: 30vh;
+}
+
+/* The Close Button */
+.close {
+  top: 10px;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h2>Modal Example</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn"><img src="../img/1.png"></button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nemo fugit velit aspernatur quibusdam magnam harum blanditiis cumque sit praesentium saepe perspiciatis, numquam ipsa placeat reprehenderit commodi, atque laborum! Qui!</p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button id="myBtn">click here to see info</button>
+<p class="about" id="myModal" >Mr. Vijay Sharma is currently leading Nepal team as a Country manager since January 2020. He has
+  joined our parent company Devyani International Limited in Aug 2011 as Restaurant General Manager.
+  With the passes of journey, DIL has opened open more than 16 KFC stores in his leadership at north
+  eastern territory of India and expanded the business from 4 cities to 15 cities and from 3 states to 8
+  states. He has more than two decade of experience in fast food industry. He holds master’s degree from
+  Welingkar Institute of Management Development and Research with specialization in retail
+  management.
+<br>
+  <span class="close"> CLOSE!</span>
+</p>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
+
+
+
+
+
+
+
+.our-team1 .pic img{
+  height:260px;
+  width:260px;
+  border-radius:50%;
+  filter:grayscale(100%);
+  cursor:pointer;
+  transition:400ms;
+  }
+  #myBtn{
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size:18px;
+    font-weight:100;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 20px;
+    letter-spacing:3px;
+    color:#ccc;
+    cursor: pointer;
+
+  }
+ 
+  .close{
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size:18px;
+    font-weight:100;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 70px;
+    letter-spacing:3px;
+    color:#ccc;
+    cursor: pointer;
+  }
+  .our-team1:hover .pic img{
+  filter:grayscale(0);
+  }
+  .name{
+  margin-top:50px;
+  font-size:30px;
+  text-align: center;
+  color:white;
+  }
+   .pos{
+  font-size:18px;
+  font-weight:100;
+  text-align: center;
+  letter-spacing:3px;
+  color:#ccc;
+  }
+  
+   .about{
+     font-family: 'Uchen';
+     width: 100%;
+  font-size:16px;
+  margin-top:20px;
+  text-align:justify;
+  color:white;
+  }
+  

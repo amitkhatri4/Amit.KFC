@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  background-color: snow;
+  scroll-behavior: smooth;
+}
+.nav {
+  
+  width: 100%;
+  height: 5rem;
+  box-shadow: 0 0 10px 2px #1f1212;;
+  display: flex;
+  align-items: center;
+}
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: white;
+}
+  
+.container {
+  
+  width: 100%;
+  margin: 0 auto;
+  padding: 9 1.5rem;
+}
+
+.menu-icons {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  color: var(--light-c);
+  font-size: 1rem;
+  transform: translateY(-50%);
+  z-index: 3;
+  display: none;
+}
+.logo1{
+  width: 10%;
+  height: 2.5rem;
+}
+.logo1 img{
+  width: 78%;
+}
+.logo {
+  width: 25%;
+  height: 2.5rem;
+}
+.logo img{
+    width: 50%;
+}
+
+
+
+.nav_list {
+  display: flex;
+}
+.nav_list li {
+  padding: 5px;
+  position: relative;
+}
+.drop_down {
+  background-color: snow;
+  background: none;
+  border-radius: 5px;
+}
+.drop_down a{
+    font-size: 10px;
+}
+.drop_down2 {
+    background-color:snow;
+    background: none;
+    border-radius: 5px;
+  }
+.sub-menu {
+  padding: 0.5rem;
+}
+.nav_list li a {
+  color: #111;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+  padding: 0 .5rem;
+}
+
+.nav_list li a:hover {
+  color: #fff;
+  font-size: 1.22rem;
+  background-color: black;
+  transition: all 0.2s ease;
+}
+
+.sub-menu {
+  color: #fff;
+  width: 25rem;
+  display: block;
+  position: absolute;
+  border-top: 3px solid #fff;
+  background-color:  snow;
+  top: 10rem;
+  transition: all 0.5s ease;
+
+  opacity: 0;
+  visibility: hidden;
+  background-color: snow;
+}
+.sub-menu:before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: 2rem;
+  border: 1rem solid transparent;
+  border-bottom-color: #fff;
+}
+
+.sub-menu .sub-menu:before {
+  top: 0;
+  left: -2rem;
+  border: 1rem solid transparent;
+  border-right-color: #fff;
+}
+.sub-menu .sub-menu {
+  border-top: none;
+  border-left: 3px solid #fff;
+  top: 0;
+  left: 100%;
+  background-color:  snow;
+}
+
+.nav_list li:hover > .sub-menu {
+  top: 4rem;
+  opacity: 1;
+  visibility: visible;
+}
+.nav_list li:hover > .sub-2 {
+  top: 0.1rem;
+}
+.nav_list li:hover > .sub-3 {
+  top: 0.1rem;
+}
+
+body {
+  overflow-x: hidden;
+}
+/* .btn {
+  background-color: #eebb33;
+  transition: background-color 0.6s;
+  display: inline-block;
+  border: 2px solid #eebb33;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+} */
+.learn_more {
+  background-color: #a00a0a;
+  margin-top: 2rem;
+  padding: 1.1rem;
+  display: inline-block;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn:hover {
+  background-color: rgba(5, 104, 18, 0.8);
+}
+/* Main section */
+
+/* Responsivenes  */
+
+@media screen and (max-width: 1080px) {
+  .nav_list li a {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 786px) {
+  .nav_list li a {
+    font-size: 0.9rem;
+  }
+  .nav_list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(37, 25, 2, 0.7);
+  
+    display: none;
+  }
+
+  .sub-menu {
+    position: initial;
+    border: 3px solid transparent;
+    border-left-color: #fff;
+  
+    margin-left: 1rem;
+    max-height: 0;
+  }
+  
+  .sub-menu::before {
+    display: none;
+  }
+  .nav_list li:hover > .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    max-height: initial;
+   
+  }
+
+  .menu-icons {
+    display: block;
+  }
+  .fa-times {
+    display: none;
+  }
+
+  .nav.active .fa-times {
+    display: block;
+  }
+  .nav.active .fa-bars {
+    display: none;
+  }
+
+  .nav.active .nav_list {
+    display: flex;
+  }
+}
+
+
+section.main{
+   display: block;
+   width: 100%;
+   margin-top: 3vh;
+   height:300vh;
+}
+.image{
+    width: 100%;
+    height: 40vh;
+    background-color: cadetblue;
+   
+}
+.image img{
+    vertical-align: middle;
+    align-items: center;
+    margin-left:50vh;
+}
+section.brand{
+    margin-top: 3vh;
+    height: 30vh;
+    width: 100%;
+    margin-left: 15vh;
+    background-color:snow;
+  }
+  
+  .column-logo{
+  float: left;
+  width: 30%;
+  padding: 5px;
+  }
+  .row-logo{
+  margin:0px 10px 0px 10px;
+  }
+  .row-logo::after{
+  content: "";
+  clear: both;
+  display: table;
+  }
+  .column-logo a img{
+  width: 50%;
+  }
+  .column-logo a  img:hover{
+    -moz-box-shadow: 0 0 10px rgb(36, 29, 29);
+    -webkit-box-shadow: 0 0 10px rgb(39, 39, 39);
+    box-shadow: 0 0 10px rgb(2, 2, 2);
+  }
+  .column-logo1{
+  float: left;
+  width: 20%;
+  padding: 5px;
+  }
+  .column-logo1 img{
+  width: 100%;
+  margin-top: 8px;
+  }
+  .column-logo1 a  img:hover{
+    -moz-box-shadow: 0 0 10px rgb(36, 29, 29);
+    -webkit-box-shadow: 0 0 10px rgb(39, 39, 39);
+    box-shadow: 0 0 20px rgb(2, 2, 2);
+  }
+
+   .kfc{
+     display: flex;
+     position: relative;
+     width: 100%;
+    height: 50vh;
+    margin-top: 15vh;
+     background-color: white;
+   }
+   .kfclogo{
+    position: absolute;
+    left: 0%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+     width: 50%;
+    background-color: rgb(255, 255, 255);
+   }
+  
+
+  .kfc .kfclogo img{
+    width:100px;
+    margin-top: 40px;
+   
+    }
+    .sanders{
+      position: absolute;
+      left: 50%;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+       width: 50%;
+      background-color: rgb(255, 255, 255);
+    }
+    .sanders .sander-image img{
+    max-width: 100%;
+    margin-top: 5px;
+    margin-left: -15px;
+      
+      }
+      .sander-image{
+        width: 200px;
+        flex: 0 0 250px;
+      }
+      
+      .sander-text{
+   margin-top: -15px;
+        padding-left: 20px;
+      }
+      .sander-text h2{
+        margin: 0;
+        padding-left: 0;
+        color: rgb(255, 0, 0);
+        text-align: center;
+      }
+      .sander-text p{
+        font-size: 20px;
+        font-family: 'STIX Two Math';
+  
+      }
+      .sander-text a{
+      
+        color: black;
+      margin-left: 150px;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 5px;
+      }
+      .sander-text a:hover{
+        background-color: rgb(82, 70, 70);
+        color: antiquewhite;
+      }
+
+  section.kfc-map{
+    display: block;
+    position: relative;
+    height: 90vh;
+    width: 100%;
+   background-image: url("../img/1920px-KFC_world_map.svg.png");
+  background-size: cover;
+  }
+  .pizza-hut{
+    display: flex;
+     position: relative;
+     width: 100%;
+    height: 50vh;
+     background-color: white;
+  }
+  .pizzalogo{
+    position: absolute;
+    left: 0%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+     width: 50%;
+    background-color: rgb(255, 255, 255);
+   }
+   .pizzalogo .pizza-image img{
+    max-width: 50%;
+    margin-top: 20px;
+    margin-left: -15px;
+      
+      }
+      .pizza-image{
+        width: 200px;
+        flex: 0 0 250px;
+      }
+      
+      .pizza-text{
+   margin-top: -15px;
+        padding-left: 20px;
+      }
+      .pizza-text h2{
+        margin: 0;
+        padding-left: 0;
+        color: rgb(255, 0, 0);
+        text-align: center;
+      }
+      .pizza-text p{
+        font-size: 20px;
+        font-family: 'STIX Two Math';
+        font-weight: bold;
+      }
+     #img2:hover {
+      -moz-box-shadow: 0 0 10px rgb(36, 29, 29);
+      -webkit-box-shadow: 0 0 10px rgb(39, 39, 39);
+      box-shadow: 0 0 20px rgb(2, 2, 2);
+
+      -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(2); 
+      }
+  section.pizzahut{
+    display: block;
+    position: relative;
+    height: 90vh;
+    width: 100%;
+   background-image: url("../img/pizza\ hut\ photo.jpg");
+  background-size: cover;
+  }
+  
+ 
+  
+   
+  
